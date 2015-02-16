@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <param name="/use_sim_time" value="false"/>
+  
+  <node pkg="roscopter" type="command.py" name="command"/>
+
+  <node pkg="roscopter" type="roscopter_node.py" name="roscopter" output="screen" args="--device=/dev/ttyUSB0 --baudrate=57600 --enable-control=true">
+  
+  </node>
+  
+  <node pkg="joy" type="joy_node" name="joy_node"/> 
+    
+
+</launch>
