@@ -1,6 +1,6 @@
 roscopter
 =========
-This is a modified interface of [roscopter][1]. Tested with ROS Indigo.
+This is a modified interface of [roscopter][1] and https://github.com/cberzan/roscopter. Tested with ROS Indigo.
 
 Building
 --------
