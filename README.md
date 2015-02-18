@@ -1,6 +1,6 @@
 roscopter
 =========
-This is a cleaned-up version of [roscopter][1]. Tested with ROS Groovy and Hydro.
+This is a modified interface of [roscopter][1]. Tested with ROS Indigo.
 
 Building
 --------
@@ -46,6 +46,9 @@ APM initialization messages, ending with "Ready to FLY".
 
 In a third terminal, you can do for example `rostopic echo /attitude` to watch
 the attitude topic.
+
+If it shows, ERROR: Cannot load message class for [roscopter/XXXXX]. Are your messages built?
+You can source the setup.bash file of your catkin to solve the problem.
 
 See [original docs][1] for more details. (Note that the original docs are wrong:
 you have to use `--baudrate` instead of `--rate`. See the source for the
